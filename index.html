@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Портфолио Front-End</title>
+
+	<link href="css/lib/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lib/lightbox.css" rel="stylesheet">
+	<link href="css/lib/animate.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<header id="top" data-anijs="if: scroll, on: window, do: swing animated, to: .header-jquery$.header-html$.header-css">
+		<div class="header-css" data-anijs="if: mouseover, do: hinge animated"></div>
+		<div class="header-html" data-anijs="if: mouseover, do: rotateIn animated"></div>
+		<div class="header-jquery" data-anijs="if: mouseover, do: flipInY animated"></div>
+		<div class="scroll-down">
+			<a class="btn animation" href="#skills"><span class="glyphicon glyphicon-chevron-down"></span></a>
+		</div>
+	</header>
+	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top animation" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#top">Портфолио</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#top">Топ</a></li>
+					<li><a href="#skills">Навыки</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-big" id="skills">
+		<div class="container">
+			<ul class="skills-item"></ul>
+		</div>
+	</div>
+
+	<div class="container" id="portfolio">
+		<div class="row portf-item"></div>
+	</div>
+
+	<footer>
+		<div class="container">Copyright © 2004</div>
+	</footer>
+
+	<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/handlebars.js"></script>
+	<script src="js/lib/lightbox.min.js"></script>
+	<script src="js/lib/jquery.easing.js"></script>
+	<script src="js/lib/anijs.js"></script>
+	<script src="js/all.min.js"></script>
+</body>
+</html>
