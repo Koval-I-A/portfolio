@@ -1,0 +1,249 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #ebeeed;
+}
+
+header {
+    background-repeat: no-repeat;
+	background-image: url(../images/fon.jpg);
+	background-position: 50% 50%;
+    background-attachment: fixed;
+    background-color: #222;
+	background-size: cover;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    min-height: 100%;
+}
+
+.header-css {
+	background-image: url(../images/css.png);
+	background-size: 100px 141px;
+	cursor: pointer;
+	height: 141px;
+	position: absolute;
+	left: 50%;
+	top: 400px;
+	margin-left: 80px;
+	width: 100px;
+}
+
+.header-html {
+	background-image: url(../images/html.png);
+	background-size: 100px 137px;
+	cursor: pointer;
+	height: 137px;
+	position: absolute;
+	left: 50%;
+	top: 400px;
+	margin-left: -150px;
+	width: 100px;
+}
+
+.header-jquery {
+	background-image: url(../images/jquery.png);
+	background-size: 440px 100px;
+	cursor: pointer;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 200px;
+	margin: auto;
+	width: 440px;
+}
+
+.modal-dialog {
+	width: 90%;
+}
+
+.portf-item .col-md-4 {
+	padding-top: 30px;
+}
+
+.portf-item .col-md-4:last-child {
+	padding-bottom: 30px;
+}
+
+.portf-item a {
+	display: block;
+	height: 300px;
+	position: relative;
+	overflow: hidden;
+	opacity: .5;
+}
+
+.portf-item a:after {
+	background: rgba(56,60,61, 0.5) url("../images/zoom.png") no-repeat 50% 50%;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-top: 0;
+	width: 0;
+	border-radius: 50%;
+}
+
+.portf-item a:hover:after {
+	padding-top: 100px;
+	margin: -50px 0 0 -50px;
+	width: 100px;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+}
+
+.portf-item a:hover {
+	opacity: 1;
+}
+
+.animation {
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+}
+
+.portf-item a:focus {
+	outline: thin dotted;
+	outline: 0px;
+}
+
+.portf-item img {
+	min-height: 300px;
+	width: 100%;
+}
+
+.modal-body img {
+	width: 100%;
+	cursor: -webkit-zoom-in;
+}
+
+.modal-body .view {
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.scroll-down .btn {
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	font-size: 16px;
+	line-height: 50px;
+	letter-spacing: normal;
+	color: #fff;
+}
+
+.scroll-down .btn:hover {
+	background-color: rgba(255,255,255,.2);
+	border-color: rgba(255,255,255,.5);
+	outline: 0;
+	color: rgba(255,255,255,.5);
+}
+
+.container-big {
+	background-color: #777777;
+	box-shadow: inset 0  8px 8px -8px rgba(0,0,0,.4),
+				inset 0 -8px 8px -8px rgba(0,0,0,.4);
+	padding: 50px 0;
+}
+
+.skills-item {
+	list-style-type: none;
+	padding: 0;
+}
+
+.skills-item a {
+	background-color: #f0f0f0;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	display: block;
+	float: left;
+	line-height: 24px;
+	padding: 0 10px;
+	margin: 5px 10px 5px 0;
+
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+		-ms-border-radius: 3px;
+		 -o-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.skills-item a:hover {
+	background-color: rgba(255,255,255,.8);
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-nav>li>a,
+.navbar-brand {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navbar-brand {
+	height: auto;
+}
+
+.navbar {
+	min-height: 20px;
+}
+
+footer {
+	border-top: 1px solid #fff;
+	color: #888;
+	padding: 30px 0;
+}
+
+.mr-b-15 {
+	margin-bottom: 15px;
+}
+
+.glyphicon-cog {
+	font-size: 32px;
+	margin-top: -7px;
+    -webkit-animation: preloader 3s infinite linear;
+       -moz-animation: preloader 3s infinite linear;
+    	-ms-animation: preloader 3s infinite linear;
+    	 -o-animation: preloader 3s infinite linear;
+    		animation: preloader 3s infinite linear;
+}
+
+@-webkit-keyframes preloader {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes preloader {
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes preloader {
+    to { -ms-transform: rotate(360deg); }
+}
+
+@-o-keyframes preloader {
+    to { -o-transform: rotate(360deg); }
+}
+
+@keyframes preloader {
+    to { transform: rotate(360deg); }
+}

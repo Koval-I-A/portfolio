@@ -1,0 +1,130 @@
+{
+	"blocks": [
+		{
+			"src" : "images/img/1.jpg",
+			"id" : "1",
+			"link" : "http://totalcan.com.ua/"
+		},
+		{
+			"src" : "images/img/11.jpg",
+			"id" : "2",
+			"link" : "http://totalcan.com.ua/ru/5129_portfolio_doppio.htm"
+		},
+		{
+			"src" : "images/img/12.jpg",
+			"id" : "3",
+			"link" : "http://totalcan.com.ua/ru/5156_Daroupakhsh.htm"
+		},
+		{
+			"src" : "images/img/2.jpg",
+			"id" : "4",
+			"link" : "http://www.506.mysite.admin.totalcan.com/"
+		},
+		{
+			"src" : "images/img/3.jpg",
+			"id" : "5",
+			"link" : "http://tdastorg.com.ua/"
+		},
+		{
+			"src" : "images/img/4.jpg",
+			"id" : "6",
+			"link" : "http://doppio.com.ua/"
+		},
+		{
+			"src" : "images/img/5.jpg",
+			"id" : "7",
+			"link" : "http://royaldesign.com.ua/"
+		},
+		{
+			"src" : "images/img/6.jpg",
+			"id" : "8",
+			"link" : "http://boom-market.com.ua/"
+		},
+		{
+			"src" : "images/img/7.jpg",
+			"id" : "9",
+			"link" : "http://natalianevskaya.com.ua/"
+		},
+		{
+			"src" : "images/img/8.jpg",
+			"id" : "10",
+			"link" : "http://parfums-elite.com.ua/"
+		},
+		{
+			"src" : "images/img/9.jpg",
+			"id" : "11",
+			"link" : "http://www.397.mysite.admin.totalcan.com/"
+		},
+		{
+			"src" : "images/img/10.jpg",
+			"id" : "12",
+			"link" : "http://textiledeluxe.com.ua/ru/catalog_children/"
+		}
+	],
+	"skills": [
+		{
+			"title" : "HTML",
+			"link" : "https://ru.wikipedia.org/wiki/HTML"
+		},
+		{
+			"title" : "HTML 5",
+			"link" : "https://ru.wikipedia.org/wiki/HTML5"
+		},
+		{
+			"title" : "CSS",
+			"link" : "https://ru.wikipedia.org/wiki/CSS"
+		},
+		{
+			"title" : "CSS3",
+			"link" : "https://ru.wikipedia.org/wiki/CSS3"
+		},
+		{
+			"title" : "JavaScript",
+			"link" : "https://ru.wikipedia.org/wiki/JavaScript"
+		},
+		{
+			"title" : "jQuery",
+			"link" : "https://ru.wikipedia.org/wiki/JQuery"
+		},
+		{
+			"title" : "jQuery UI",
+			"link" : "https://ru.wikipedia.org/wiki/JQuery_UI"
+		},
+		{
+			"title" : "JSON",
+			"link" : "https://ru.wikipedia.org/wiki/JSON"
+		},
+		{
+			"title" : "AJAX",
+			"link" : "https://ru.wikipedia.org/wiki/AJAX"
+		},
+		{
+			"title" : "GruntJS",
+			"link" : "http://gruntjs.com/"
+		},
+		{
+			"title" : "Twitter Bootstrap",
+			"link" : "https://ru.wikipedia.org/wiki/Twitter_Bootstrap"
+		},
+		{
+			"title" : "GulpJS",
+			"link" : "http://gulpjs.com/"
+		},
+		{
+			"title" : "Handlebars",
+			"link" : "http://handlebarsjs.com/"
+		},
+		{
+			"title" : "Git",
+			"link" : "https://ru.wikipedia.org/wiki/Git"
+		},
+		{
+			"title" : "Nginx",
+			"link" : "https://ru.wikipedia.org/wiki/Nginx"
+		},
+		{
+			"title" : "QUnit",
+			"link" : "http://qunitjs.com/"
+		}
+	]
+}
