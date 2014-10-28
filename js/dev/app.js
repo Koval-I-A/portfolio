@@ -56,7 +56,7 @@ $(document).ready(function() {
 		$('a').bind('click', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
+				scrollTop: $($anchor.attr('href')).offset().top - 30
 			}, 1500, 'easeInOutExpo');
 			// }, 1500, 'easeInOutBack');
 			event.preventDefault();
@@ -69,7 +69,7 @@ $(document).ready(function() {
 				var currLink = $(this);
 				var currLi = $(this).closest('li');
 				var refElement = $(currLink.attr("href"));
-				if (refElement.offset().top <= scrollPos) {
+				if (refElement.offset().top - 30 <= scrollPos) {
 					$('.navbar-right li').removeClass("active");
 					currLi.addClass("active");
 				}

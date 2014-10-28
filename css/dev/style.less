@@ -176,29 +176,33 @@ header {
 	box-shadow: inset 0  8px 8px -8px rgba(0,0,0,.4),
 				inset 0 -8px 8px -8px rgba(0,0,0,.4);
 	padding: 50px 0;
-}
-
-.skills-item {
-	list-style-type: none;
-	padding: 0;
-	a {
-		background-color: #f0f0f0;
-		box-shadow: 1px 1px 1px rgba(0,0,0,.4);
-		display: block;
-		float: left;
-		line-height: 24px;
-		padding: 0 10px;
-		margin: 5px 10px 5px 0;
-
-		-webkit-border-radius: @radius;
-		   -moz-border-radius: @radius;
-			-ms-border-radius: @radius;
-			 -o-border-radius: @radius;
-				border-radius: @radius;
-	&:hover {
-		background-color: rgba(255,255,255,.8);
-		text-decoration: none;
+	h2 {
+		color: #444;
+		margin-top: 0;
+		margin-bottom: 30px;
 	}
+	.skills-item {
+		list-style-type: none;
+		padding: 0;
+		a {
+			background-color: #f0f0f0;
+			box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+			display: block;
+			float: left;
+			line-height: 24px;
+			padding: 0 10px;
+			margin: 5px 10px 5px 0;
+
+			-webkit-border-radius: @radius;
+			   -moz-border-radius: @radius;
+				-ms-border-radius: @radius;
+				 -o-border-radius: @radius;
+					border-radius: @radius;
+		&:hover {
+			background-color: rgba(255,255,255,.8);
+			text-decoration: none;
+		}
+		}
 	}
 }
 
@@ -238,6 +242,11 @@ footer {
 		background: url("@{images}github.png");
 		display: block;
 		height: 30px;
+		opacity: .7;
 		width: 75px;
+		.animation;
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
