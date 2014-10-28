@@ -1,0 +1,243 @@
+/* 
+  Автор: Коваль Игорь;
+  Стиль для моего портфолио
+  Стили написанные на less
+  Код лежит в открытом доступе,
+  для ознакомления с моими навыками
+*/
+
+/** ===========================
+ *  Объявление переменных
+ *  ===========================
+*/
+
+@percent100: 100%;
+@percent90: @percent100 - 10;
+@radius: 3px;
+@images: "../images/";
+
+html, body {
+	background-color: #ebeeed;
+	height: @percent100;
+}
+
+/** ===========================
+ *  Стили для header
+ *  ===========================
+*/
+
+header {
+    background: fixed url("@{images}fon.jpg") 50% 50% no-repeat;
+	background-size: cover;
+    height: @percent100;
+    padding: 100px 0;
+    position: relative;
+    min-height: @percent100;
+    width: @percent100;
+    .header-default {
+		cursor: pointer;
+		position: absolute;
+	}
+	.header-html-css {
+		left: 50%;
+		top: 400px;
+		width: 100px;
+	}
+
+	.header-css {
+		background-image: url("@{images}css.png");
+		background-size: 100px 141px;
+		height: 141px;
+		margin-left: 80px;
+		.header-html-css;
+		.header-default;
+	}
+
+	.header-html {
+		background-image: url("@{images}html.png");
+		background-size: 100px 137px;
+		height: 137px;
+		margin-left: -150px;
+		.header-html-css;
+		.header-default;
+	}
+
+	.header-jquery {
+		background-image: url("@{images}jquery.png");
+		background-size: 440px 100px;
+		height: 100px;
+		left: 0;
+		right: 0;
+		top: 200px;
+		margin: auto;
+		width: 440px;
+		.header-default;
+	}
+}
+
+
+
+/** ===========================
+ *  Стили для раздела работ
+ *  ===========================
+*/
+
+.modal-dialog {
+	width: @percent90;
+}
+
+.portf-item {
+	.col-md-4 {
+		padding-top: 30px;
+		&:last-child {
+			padding-bottom: 30px;
+		}
+	}
+	a {
+		display: block;
+		height: 300px;
+		position: relative;
+		overflow: hidden;
+		opacity: .5;
+		&:after {
+			background: rgba(56,60,61, 0.5) url("../images/zoom.png") no-repeat 50% 50%;
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			padding-top: 0;
+			width: 0;
+			border-radius: 50%;
+		}
+		&:hover:after {
+			padding-top: 100px;
+			margin: -50px 0 0 -50px;
+			width: 100px;
+			.animation;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		&:focus {
+			outline: thin dotted;
+			outline: 0px;
+		}
+	}
+	img {
+		min-height: 300px;
+		width: @percent100;
+	}
+}
+
+.animation {
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+		 -o-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+}
+
+.modal-body {
+	img {
+		width: @percent100;
+		cursor: -webkit-zoom-in;
+	}
+	.view {
+		height: 500px;
+		overflow-y: scroll;
+	}
+}
+
+.scroll-down {
+	position: absolute;
+	bottom: 20px;
+	width: @percent100;
+	text-align: center;
+	.btn {
+		width: 50px;
+		height: 50px;
+		padding: 0;
+		border: 2px solid #fff;
+		border-radius: @percent100;
+		font-size: 16px;
+		line-height: 50px;
+		letter-spacing: normal;
+		color: #fff;
+		&:hover {
+			background-color: rgba(255,255,255,.2);
+			border-color: rgba(255,255,255,.5);
+			outline: 0;
+			color: rgba(255,255,255,.5);
+		}
+	}
+}
+
+.container-big {
+	background-color: #777777;
+	box-shadow: inset 0  8px 8px -8px rgba(0,0,0,.4),
+				inset 0 -8px 8px -8px rgba(0,0,0,.4);
+	padding: 50px 0;
+}
+
+.skills-item {
+	list-style-type: none;
+	padding: 0;
+	a {
+		background-color: #f0f0f0;
+		box-shadow: 1px 1px 1px rgba(0,0,0,.4);
+		display: block;
+		float: left;
+		line-height: 24px;
+		padding: 0 10px;
+		margin: 5px 10px 5px 0;
+
+		-webkit-border-radius: @radius;
+		   -moz-border-radius: @radius;
+			-ms-border-radius: @radius;
+			 -o-border-radius: @radius;
+				border-radius: @radius;
+	&:hover {
+		background-color: rgba(255,255,255,.8);
+		text-decoration: none;
+	}
+	}
+}
+
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-nav>li>a,
+.navbar-brand {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navbar-brand {
+	height: auto;
+}
+
+.navbar {
+	min-height: 20px;
+}
+
+.mr-b-15 {
+	margin-bottom: 15px;
+}
+
+/** ===========================
+ *  Стили для футера
+ *  ===========================
+*/
+
+footer {
+	border-top: 1px solid #fff;
+	color: #888;
+	padding: 30px 0;
+	.github {
+		background: url("@{images}github.png");
+		display: block;
+		height: 30px;
+		width: 75px;
+	}
+}
