@@ -30,6 +30,13 @@ $(document).ready(function() {
 
 				$('body').append(html);
 				$('[data-toggle="tooltip"]').tooltip({container: 'body'});
+				$('[data-toggle="popover"]').popover();
+				$('body').on('click', function (e) {
+					if ($(e.target).data('toggle') !== 'popover'
+						&& $(e.target).parents('.popover.in').length === 0) {
+						$('[data-toggle="popover"]').popover('hide');
+					}
+				});
 			
 			});
 		});
@@ -53,7 +60,7 @@ $(document).ready(function() {
 	/**
 	 * Навигация и скролинг
 	 */
-		$('a').bind('click', function(event) {
+		$('nav a').bind('click', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top - 30

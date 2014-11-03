@@ -86,6 +86,10 @@ header {
 	width: @percent90;
 }
 
+.btn:focus {
+	outline: 0;
+}
+
 .portf-item {
 	.col-md-4 {
 		padding-top: 30px;
@@ -144,6 +148,17 @@ header {
 	.view {
 		height: 500px;
 		overflow-y: scroll;
+	}
+	.commit {
+		color: #428bca;
+		&:hover {
+			color: #2a6496;
+		}
+		.btn {
+			border-radius: 50%;
+			color: #adadad;
+			padding: 0px 6px;
+		}
 	}
 }
 
@@ -216,6 +231,9 @@ header {
 .navbar-brand {
 	padding-top: 5px;
 	padding-bottom: 5px;
+	&:focus {
+		outline: 0px;
+	}
 }
 .navbar-brand {
 	height: auto;

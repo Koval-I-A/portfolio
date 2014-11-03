@@ -1,64 +1,168 @@
 {
 	"blocks": [
 		{
+			"src" : "images/img/16.jpg",
+			"id" : "16",
+			"link" : "/",
+			"desc" : [
+				{
+					"message" : "Сайт с закрытой регистрацией",
+					"commit" : "На данном сайте закрытая регистрация, по этому я предоставляю, для ознакомления, несколько страниц html макетов."
+				}
+			]
+		},
+		{
+			"src" : "images/img/15.jpg",
+			"id" : "15",
+			"link" : "/",
+			"desc" : [
+				{
+					"message" : "Сайт с закрытой регистрацией",
+					"commit" : "На данном сайте закрытая регистрация, по этому я предоставляю, для ознакомления, несколько страниц html макетов."
+				}
+			]
+		},
+		{
+			"src" : "images/img/14.jpg",
+			"id" : "14",
+			"link" : "http://vspstats.com/"
+		},
+		{
+			"src" : "images/img/13.jpg",
+			"id" : "13",
+			"link" : "http://youpartnervsp.com/adwords/"
+		},
+		{
 			"src" : "images/img/1.jpg",
-			"id" : "1",
-			"link" : "http://totalcan.com.ua/"
+			"id" : "12",
+			"link" : "http://totalcan.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/11.jpg",
-			"id" : "2",
-			"link" : "http://totalcan.com.ua/ru/5129_portfolio_doppio.htm"
+			"id" : "11",
+			"link" : "http://totalcan.com.ua/ru/5129_portfolio_doppio.htm",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/12.jpg",
-			"id" : "3",
-			"link" : "http://totalcan.com.ua/ru/5156_Daroupakhsh.htm"
+			"id" : "10",
+			"link" : "http://totalcan.com.ua/ru/5156_Daroupakhsh.htm",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/2.jpg",
-			"id" : "4",
-			"link" : "http://www.506.mysite.admin.totalcan.com/"
+			"id" : "9",
+			"link" : "http://www.506.mysite.admin.totalcan.com/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/3.jpg",
-			"id" : "5",
-			"link" : "http://tdastorg.com.ua/"
+			"id" : "8",
+			"link" : "http://tdastorg.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/4.jpg",
-			"id" : "6",
-			"link" : "http://doppio.com.ua/"
+			"id" : "7",
+			"link" : "http://doppio.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/5.jpg",
-			"id" : "7",
-			"link" : "http://royaldesign.com.ua/"
+			"id" : "6",
+			"link" : "http://royaldesign.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/6.jpg",
-			"id" : "8",
-			"link" : "http://boom-market.com.ua/"
+			"id" : "5",
+			"link" : "http://boom-market.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/7.jpg",
-			"id" : "9",
-			"link" : "http://natalianevskaya.com.ua/"
+			"id" : "4",
+			"link" : "http://natalianevskaya.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/8.jpg",
-			"id" : "10",
-			"link" : "http://parfums-elite.com.ua/"
+			"id" : "3",
+			"link" : "http://parfums-elite.com.ua/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/9.jpg",
-			"id" : "11",
-			"link" : "http://www.397.mysite.admin.totalcan.com/"
+			"id" : "2",
+			"link" : "http://www.397.mysite.admin.totalcan.com/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		},
 		{
 			"src" : "images/img/10.jpg",
-			"id" : "12",
-			"link" : "http://textiledeluxe.com.ua/ru/catalog_children/"
+			"id" : "1",
+			"link" : "http://textiledeluxe.com.ua/ru/catalog_children/",
+			"desc" : [
+				{
+					"message" : "Данный сайт мной больше не поддерживаеться",
+					"commit" : "Так как данный сайт я больше не поддерживаю, в нем могли быть изменения, отличающиеся от макета."
+				}
+			]
 		}
 	],
 	"skills": [
