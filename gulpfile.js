@@ -4,6 +4,8 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	csso = require('gulp-csso'),
     less = require('gulp-less'),
+    concat = require('gulp-concat'),
+    minifyCSS = require('gulp-minify-css'),
     path = require('path');
 
 gulp.task('connect', function() {

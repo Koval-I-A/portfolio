@@ -23,9 +23,20 @@
 								{{/each}}
 							</div>
 						{{/if}}
-						<div class="mr-b-15">
-							<a href="{{link}}" target="_blank" data-toggle="tooltip" data-placement="top" title="Откроется в новом окне"><span class="glyphicon glyphicon-link"></span> Посетить сайт</a>
-						</div>
+						{{#if link}}
+							<div class="mr-b-15">
+								<a href="{{this.link}}" target="_blank" data-toggle="tooltip" data-placement="top" title="Откроется в новом окне"><span class="glyphicon glyphicon-link"></span> Посетить сайт</a>
+							</div>
+						{{/if}}
+						{{#if mockup}}
+							<div class="mr-b-15">
+								{{#each mockup}}
+									<div>
+										<a href="{{this.link}}" target="_blank"><span class="glyphicon glyphicon-eye-open"></span> {{this.title}}</a>
+									</div>
+								{{/each}}
+							</div>
+						{{/if}}
 						<div class="view">
 							<a class="img" href="{{src}}" data-lightbox="example-{{id}}">
 								<img src="{{src}}" alt="" />

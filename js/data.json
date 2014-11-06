@@ -14,11 +14,24 @@
 		{
 			"src" : "images/img/15.jpg",
 			"id" : "15",
-			"link" : "/",
 			"desc" : [
 				{
 					"message" : "Сайт с закрытой регистрацией",
 					"commit" : "На данном сайте закрытая регистрация, по этому я предоставляю, для ознакомления, несколько страниц html макетов."
+				}
+			],
+			"mockup" : [
+				{
+					"title" : "Главная",
+					"link" : "/html_mockups/partner/"
+				},
+				{
+					"title" : "Чат",
+					"link" : "/html_mockups/partner/chat.html"
+				},
+				{
+					"title" : "Музыкальная библиотека",
+					"link" : "/html_mockups/partner/audio.html"
 				}
 			]
 		},
