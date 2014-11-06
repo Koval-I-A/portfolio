@@ -3,11 +3,20 @@
 		{
 			"src" : "images/img/16.jpg",
 			"id" : "16",
-			"link" : "/",
 			"desc" : [
 				{
 					"message" : "Сайт с закрытой регистрацией",
 					"commit" : "На данном сайте закрытая регистрация, по этому я предоставляю, для ознакомления, несколько страниц html макетов."
+				}
+			],
+			"mockup" : [
+				{
+					"title" : "Главная",
+					"link" : "/html_mockups/mogamu/"
+				},
+				{
+					"title" : "Главная (концепт)",
+					"link" : "/html_mockups/mogamu/concept.html"
 				}
 			]
 		},
@@ -242,6 +251,23 @@
 		{
 			"title" : "QUnit",
 			"link" : "http://qunitjs.com/"
+		}
+	],
+	"contact": [
+		{
+			"class" : "skype",
+			"copy" : "dev1l_777",
+			"text" : "dev1l_777"
+		},
+		{
+			"class" : "email",
+			"copy" : "Koval_I_A@i.ua",
+			"text" : "Koval_I_A@i.ua"
+		},
+		{
+			"class" : "linkedin",
+			"copy" : "https://www.linkedin.com/profile/view?id=352312113",
+			"text" : "linkedin.com"
 		}
 	]
 }

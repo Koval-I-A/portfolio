@@ -1,0 +1,22 @@
+<div id="contTemp">
+	{{#each contact}}
+		<div class="cont-item" data-toggle="tooltip" data-placement="top" title="Скопировать буфер">
+			<button type="submit" class="copy btn btn-default {{class}}" data-clipboard-text="{{copy}}" data-anijs="if: mouseover, do: bounceIn animated; if: click, do: bounce animated"></button>
+			<span>{{text}}</span>
+		</div>
+	{{/each}}
+	<div class="modal fade bs-example-modal-sm" id="contModal">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			        <h4 class="modal-title">Скопировано в буфер</h4>
+		    	</div>
+		    	<div class="modal-body"></div>
+		    	<div class="modal-footer">
+			        <button type="button" class="btn btn-primary" data-dismiss="modal">Ок</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>

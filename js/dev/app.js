@@ -1,9 +1,38 @@
 $(document).ready(function() {
+	/**
+	 * Функции для дальнейшего подключения
+	 */
+	var tooltipFunction = function() {
+		$('[data-toggle="tooltip"]').tooltip({container: 'body'});
+	};
+
+	var popoverFunction = function() {
+		$('[data-toggle="popover"]').popover();
+		$('body').on('click', function (e) {
+			if ($(e.target).data('toggle') !== 'popover'
+				&& $(e.target).parents('.popover.in').length === 0) {
+				$('[data-toggle="popover"]').popover('hide');
+			}
+		});
+	};
+
+	var copyFunction = function() {
+		if ($('.copy').length) {
+			var client = new ZeroClipboard($('.copy'));
+			client.on('ready', function(readyEvent) {
+				client.on('aftercopy', function(event) {
+					this === client;
+					$('#contModal .modal-body').html(event.data['text/plain'] + ' скопировано в буфер');
+					$('#contModal').modal('show');
+				});
+			});
+		};
+	};
 
 	/**
 	 * Загрузка шаблонов
 	 */
-		$.get('/tpl/blocksTemp.html', function(tpl) {
+		$.get('/tpl/blocksTpl.html', function(tpl) {
 			$.ajax({
 				url: 'js/data.json'
 			}).done(function(data){
@@ -18,7 +47,7 @@ $(document).ready(function() {
 			});
 		});
 
-		$.get('/tpl/popTemp.html', function(tpl) {
+		$.get('/tpl/popTpl.html', function(tpl) {
 			$.ajax({
 				url: 'js/data.json'
 			}).done(function(data){
@@ -29,19 +58,13 @@ $(document).ready(function() {
 					html    = template(json);
 
 				$('body').append(html);
-				$('[data-toggle="tooltip"]').tooltip({container: 'body'});
-				$('[data-toggle="popover"]').popover();
-				$('body').on('click', function (e) {
-					if ($(e.target).data('toggle') !== 'popover'
-						&& $(e.target).parents('.popover.in').length === 0) {
-						$('[data-toggle="popover"]').popover('hide');
-					}
-				});
+				tooltipFunction();
+				popoverFunction();
 			
 			});
 		});
 
-		$.get('/tpl/skillsTemp.html', function(tpl) {
+		$.get('/tpl/skillsTpl.html', function(tpl) {
 			$.ajax({
 				url: 'js/data.json'
 			}).done(function(data){
@@ -52,15 +75,33 @@ $(document).ready(function() {
 					html    = template(json);
 
 				$('.skills-item').append(html);
-				$('[data-toggle="tooltip"]').tooltip({container: 'body'});
+				tooltipFunction();
 			
+			});
+		});
+
+		$.get('/tpl/contTpl.html', function(tpl) {
+			$.ajax({
+				url: 'js/data.json'
+			}).done(function(data){
+
+				var json = data,
+					source   = tpl,
+					template = Handlebars.compile(source),
+					html    = template(json);
+
+				$('.cont').append(html);
+				tooltipFunction();
+				AniJS.run();
+				copyFunction();
+	
 			});
 		});
 
 	/**
 	 * Навигация и скролинг
 	 */
-		$('nav a').bind('click', function(event) {
+		$('nav a, .scroll-down a').bind('click', function(event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top - 30
